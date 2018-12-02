@@ -1,0 +1,13 @@
+<%= form_for @user, url: save_keys_path, :html => { multipart: true } do |f| %>
+	<div class="form-group">
+		<%= f.label :consumer_key, 'Consumer Key' %>
+		<%= f.password_field :consumer_key, placeholder: "Paste your Consumer Key", required: true %>
+	</div>
+	<div class="form-group">
+		<%= f.label :consumer_secret, 'Consumer Secret' %>
+		<%= f.password_field :consumer_secret, placeholder: "Paste your Consumer Secret", required: true %>
+	</div>
+	<div class="form-group button">
+		<%= f.submit 'Submit' %>
+	</div>
+<% end %>

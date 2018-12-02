@@ -1,0 +1,134 @@
+// Place all the styles related to the uploads controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+/* ------ Variables ------- **/
+$grey: #ccc;
+$dark: rgb(63, 61, 86);
+$purple: rgb(108, 99, 255);
+$pink: #ffa7c4;
+
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	background: #f6f6f6;
+}
+
+#error_explanation {
+  background: $pink;
+  color: $dark;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+
+  ul {
+    list-style: none;
+  }
+
+  li, h2 {
+    margin-bottom: 8px
+  }
+}
+
+.container {
+	max-width: 960px;
+	margin: auto;
+	padding: 20px 15px;
+	background: white;
+	min-height: 100vh;
+	box-shadow: 0 9px 0px 0px white, 0 -9px 0px 0px white, 12px 0 15px -4px rgba(233, 236, 239, 0.8), -12px 0 15px -4px rgba(233, 236, 239, 0.8);
+}
+
+.upload__inner form, .show-keys {
+	padding: 18px;
+}
+
+h1 {
+	margin-bottom: 20px;
+	color: $dark;
+}
+
+.upload__inner input, .auth input {
+	width: 100%;
+	padding: 10px;
+	border: 1px solid $grey;
+	border-radius: 8px;
+  box-sizing: border-box;
+}
+
+.upload__inner input, .auth input {
+	font-size: 18px;
+	outline: none;
+
+	&:focus {
+		border: 2px solid $purple;
+	}
+}
+
+.form-group {
+	margin-bottom: 20px;
+}
+
+.upload__inner .form-group label, .auth label {
+	display: block;
+	padding-bottom: 8px;
+	font-size: 1.4vw;
+	font-weight: 600;
+	color: $dark;
+}
+
+.upload__inner__svg svg {
+	width: 60%;
+	height: auto;
+}
+
+.upload__inner--center {
+	text-align: center;
+}
+
+.form-group.button input {
+	background: $purple;
+	font-weight: bold;
+	color: white;
+	height: 42px;
+	outline: none;
+	border: none;
+	cursor: pointer;
+
+	&:hover {
+		background: $dark;
+	}
+
+	// Simulation of a button click 😉
+	&:focus {
+		font-size: 16px;
+	}
+}
+
+.show-keys__inner {
+  background: $dark;
+  border-radius: 8px;
+  color: #fff;
+  padding: 10px;
+  font-family: monospace;
+  font-size: 16px;
+  overflow-y: auto;
+}
+
+.show-keys .pink {
+  color: $pink;
+}
+
+.show-keys__inner li:first-child {
+  margin-bottom: 20px;
+}
