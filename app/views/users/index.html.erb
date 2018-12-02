@@ -1,10 +1,10 @@
 <div class="upload">
-	<div class="upload__inner">
-		<h1 class="upload__inner--center">A simple way to encrypt and decrypt in Rails 5.2 - Revisited</h1>
-		<div class="upload__inner__svg upload__inner--center">
-				<%= render 'shared/auth_svg' %>
-		</div>
-		<%= render 'form' %>
+  <div class="upload__inner">
+    <h1 class="upload__inner--center">A simple way to encrypt and decrypt in Rails 5.2 - Revisited</h1>
+    <div class="upload__inner__svg upload__inner--center">
+        <%= render 'shared/auth_svg' %>
+    </div>
+    <%= render 'form' %>
     <%= render 'shared/show_keys' if @user.consumer_key.present? %>
-	</div>
+  </div>
 </div>
